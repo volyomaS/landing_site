@@ -1,0 +1,242 @@
+html {
+    padding-left: 25%;
+    padding-right: 25%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+header {
+    margin: 0;
+}
+
+nav {
+    background-color: #91ACB1;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.main_nav {
+    color: white;
+    text-decoration: none;
+}
+
+.main_nav:visited {
+    color: white;
+}
+
+.main_nav:hover {
+    text-decoration: underline;
+}
+
+#header_pic {
+    background-image: url("https://img5.goodfon.ru/wallpaper/nbig/e/9c/tekstura-fon-squares-linii-background.jpg");
+    background-size: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 40px;
+    height: 350px;
+    line-height: 350px;
+}
+
+#welcome {
+    display: inline-block;
+    vertical-align: 57%;
+    line-height: normal;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.001px;
+}
+
+main {
+    margin-top: -75px;
+    z-index: 2;
+    background-color: white;
+    padding: 5%;
+}
+
+#sale {
+    border: 1px #91ACB1 solid;
+    background-color: #FCFAFD;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#insale {
+    color: #91ACB1;
+    -webkit-text-stroke-color: #6B7E83;
+    -webkit-text-stroke-width: 0.00001px;
+}
+
+#santasale {
+    width: 125px;
+    height: 125px;
+    margin-top: -75px;
+    z-index: 3;
+    margin-left: -20px;
+}
+
+#buy {
+    border: 1px #6B7E83 solid;
+    background-color: #9B9B9B;
+    padding: 5%;
+}
+
+.imgbuy {
+    background-color: #FCFAFD;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+
+.smooth_border {
+    border-radius: 50px;
+}
+
+.imgprocess {
+    border-radius: 50%;
+}
+
+.buytext {
+    margin-top: -20px;
+    color: #6B7E83;
+}
+
+.btnbuy {
+    background-color: #9B9B9B;
+    font-size: 18px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+.greenbtn {
+    background-color: #83FFC3;
+}
+
+.btnbuy:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviews_map {
+    padding-top: 5%;
+}
+
+aside {
+    width: 44%;
+    padding-bottom: 2.5%;
+}
+
+.reviews {
+    background-color: #91ACB1;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#h2review {
+    text-align: center;
+    color: white;
+}
+
+#h2map {
+    text-align: center;
+    color: #6B7E83;
+}
+
+.review {
+    background-color: white;
+    border-radius: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.review_text {
+    text-align: left;
+}
+
+.review_author {
+    text-align: right;
+    font-size: 20px;
+}
+
+#path {
+    color: #6B7E83;
+    text-align: center;
+}
+
+#map {
+    display: block;
+    margin: 0 auto;
+}
+
+.pop_div {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pop_content {
+    background-color: #FCFAFD;
+    border: 1px black solid;
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.buttonClose {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.buttonClose:hover, .buttonClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pop_img {
+    border-radius: 50%;
+}
+
+#stock {
+    color: red;
+}
+
+#stock_img {
+    margin-top: -200px;
+    margin-left: -100px;
+}
+
+em {
+    color: red;
+}
