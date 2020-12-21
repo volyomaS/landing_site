@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Детали</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="static/css/main_styles.css">
+    <link rel="icon" href="static/images/icon.png">
+</head>
+<body>
+    <script src="static/js/showHeader.js"></script>
+    <main class="smooth_border">
+        <div class="feedback smooth_border" style="margin-top: 0">
+            <h2 class="h2white">Обратная_связь</h2>
+            <textarea class="smooth_border" id="input-area" placeholder="Введите_сообщение..." name="input" rows="5"></textarea>
+            <button class="smooth_border" id="send-button" onclick="onSend()">Отправить</button>
+            <span id="sent">Отправлено!</span>
+        </div>
+        <div class="map smooth_border">
+            <h2 id="h2map">Как_нас_найти?</h2>
+            <p id="path">Глобальное_наступление<br>Пыль_2,_Шорт<br>проход_во_двор</p>
+            <img id="map" src="static/images/map.png" width="300" height="300">
+        </div>
+        <script src="static/js/feedback.js"></script>
+    </main>
+</body>
+</html>

@@ -11,16 +11,7 @@
     <script src="static/js/pop.js"></script>
 </head>
 <body onload="pop()">
-    <header>
-        <nav>
-            <a class="main_nav" href="/">квадраты_инк</a> |
-            <a class="main_nav">История</a> |
-            <a class="main_nav">Контакты</a>
-        </nav>
-        <div id="header_pic">
-            <h1 id="welcome">Лучшие_в_мире_квадраты</h1>
-        </div>
-    </header>
+    <script src="static/js/showHeader.js"></script>
     <main class="smooth_border">
         <div id="sale" class="smooth_border">
             <img class="imgprocess" src="static/images/danger_square.png" width="300" height="300">
@@ -61,7 +52,7 @@
         </div>
         <div class="flex reviews_map">
             <aside class="reviews smooth_border">
-                <h2 id="h2review">Отзывы</h2>
+                <h2 class="h2white">Отзывы</h2>
                 <div class="review">
                     <p class="review_text">Ля_какие_квадраты_5⭐</p>
                     <p class="review_author">Алексей_20.11.20</p>
@@ -84,8 +75,8 @@
             </aside>
         </div>
         <div class="feedback smooth_border">
-            <h2 id="h2feedback">Обратная связь</h2>
-            <textarea class="smooth_border" id="input-area" placeholder="Введите сообщение..." name="input" rows="5"></textarea>
+            <h2 class="h2white">Обратная_связь</h2>
+            <textarea class="smooth_border" id="input-area" placeholder="Введите_сообщение..." name="input" rows="5"></textarea>
             <button class="smooth_border" id="send-button" onclick="onSend()">Отправить</button>
             <span id="sent">Отправлено!</span>
         </div>

@@ -105,6 +105,10 @@ main {
     border-radius: 50px;
 }
 
+.smooth_border_small {
+    border-radius: 25px;
+}
+
 .imgprocess {
     border-radius: 50%;
 }
@@ -161,12 +165,7 @@ aside {
     margin-top: 50px;
 }
 
-#h2review {
-    text-align: center;
-    color: white;
-}
-
-#h2feedback {
+.h2white {
     text-align: center;
     color: white;
 }
@@ -282,4 +281,55 @@ em {
     display: none;
     padding: 1%;
     text-align: center;
+}
+
+.column {
+    width: 45%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#description {
+    background-color: #FCFAFD;
+    border: #91ACB1 1px solid;
+    padding: 5%;
+}
+
+.desc-text {
+    color: #6B7E83;
+}
+
+.squares-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#features {
+    margin-top: 50px;
+    background-color: #91ACB1;
+    padding: 1px 2% 2%;
+}
+
+#features-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.feature {
+    background-color: #FCFAFD;
+    flex-shrink: 0;
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+}
+
+.feature-text {
+    text-align: center;
+    display: inline-block;
+    width: 90%
 }
