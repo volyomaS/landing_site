@@ -151,7 +151,22 @@ aside {
     padding-right: 5%;
 }
 
+.feedback {
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    padding-top: 1px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 50px;
+}
+
 #h2review {
+    text-align: center;
+    color: white;
+}
+
+#h2feedback {
     text-align: center;
     color: white;
 }
@@ -178,7 +193,7 @@ aside {
 }
 
 #path {
-    color: #6B7E83;
+    color: #6b7e83;
     text-align: center;
 }
 
@@ -239,4 +254,32 @@ aside {
 
 em {
     color: red;
+}
+
+#input-area {
+    border: none;
+    outline: none;
+    padding: 1% 5%;
+    word-wrap: break-word;
+    resize: none;
+    font-size: 18px;
+    margin: 1%;
+}
+
+#send-button {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 1%;
+    margin: 1%;
+    background-color: #cb6e54;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+#sent {
+    display: none;
+    padding: 1%;
+    text-align: center;
 }

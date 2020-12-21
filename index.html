@@ -23,24 +23,25 @@
     </header>
     <main class="smooth_border">
         <div id="sale" class="smooth_border">
-            <img class="imgprocess" src="static/images/danger_square.png" width="300" height="300" >
+            <img class="imgprocess" src="static/images/danger_square.png" width="300" height="300">
             <div id="insale">
                 <h2>Квадрат_с_любым_рисунком</h2>
-                <p>Это_не_просто_квадрат,_как_может показаться_на_первый_взгляд._Это самый классный_квадрат_с_рисунком станет_вашим_всего_за_300$.</p>
+                <p>Это_не_просто_квадрат,_как_может показаться_на_первый_взгляд._Это самый классный_квадрат_с_рисунком
+                    станет_вашим_всего_за_300$.</p>
             </div>
         </div>
         <img id="santasale" src="static/images/santa sale.png">
         <div id="pop_div" class="pop_div">
-        <div class="pop_content">
-            <span class="buttonClose">&times;</span>
-            <h2 id="stock">АКЦИЯ!!!</h2>
-            <p>Купите_прямо_сейчас_красный_квадрат_всего_за_<em>120$</em>!!!</p>
-            <img id="pop_img" src="static/images/red_square.png" width="200" height="200"><br>
-            <img id="stock_img" src="static/images/santa sale.png" width="100" height="100">
-            <p><del>300$</del> <em>120$</em></p>
-            <button class="btnbuy greenbtn">Купить</button>
+            <div class="pop_content">
+                <span class="buttonClose">&times;</span>
+                <h2 id="stock">АКЦИЯ!!!</h2>
+                <p>Купите_прямо_сейчас_красный_квадрат_всего_за_<em>120$</em>!!!</p>
+                <img id="pop_img" src="static/images/red_square.png" width="200" height="200"><br>
+                <img id="stock_img" src="static/images/santa sale.png" width="100" height="100">
+                <p><del>300$</del><em>120$</em></p>
+                <button class="btnbuy greenbtn">Купить</button>
+            </div>
         </div>
-    </div>
         <div id="buy" class="smooth_border flex">
             <div class="imgbuy smooth_border">
                 <img class="imgprocess" src="static/images/red_square.png" width="200" height="200">
@@ -82,6 +83,13 @@
                 <img id="map" src="static/images/map.png" width="300" height="300">
             </aside>
         </div>
+        <div class="feedback smooth_border">
+            <h2 id="h2feedback">Обратная связь</h2>
+            <textarea class="smooth_border" id="input-area" placeholder="Введите сообщение..." name="input" rows="5"></textarea>
+            <button class="smooth_border" id="send-button" onclick="onSend()">Отправить</button>
+            <span id="sent">Отправлено!</span>
+        </div>
     </main>
+    <script src="static/js/feedback.js"></script>
 </body>
 </html>
