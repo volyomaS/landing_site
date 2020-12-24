@@ -265,6 +265,16 @@ em {
     margin: 1%;
 }
 
+#name {
+    border: none;
+    outline: none;
+    padding: 1% 5%;
+    word-wrap: break-word;
+    resize: none;
+    font-size: 18px;
+    margin: 1%;
+}
+
 #send-button {
     display: block;
     border: none;

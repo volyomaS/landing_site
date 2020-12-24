@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="квадраты, красивые квадраты, купить квадраты">
@@ -10,7 +10,7 @@
     <link rel="icon" href="static/images/icon.png">
     <script src="static/js/pop.js"></script>
 </head>
-<body onload="pop()">
+<body onload="pop(true)">
     <script src="static/js/showHeader.js"></script>
     <main class="smooth_border">
         <div id="sale" class="smooth_border">
@@ -24,13 +24,19 @@
         <img id="santasale" src="static/images/santa sale.png">
         <div id="pop_div" class="pop_div">
             <div class="pop_content">
-                <span class="buttonClose">&times;</span>
+                <span id="closePop1" class="buttonClose">&times;</span>
                 <h2 id="stock">АКЦИЯ!!!</h2>
                 <p>Купите_прямо_сейчас_красный_квадрат_всего_за_<em>120$</em>!!!</p>
                 <img id="pop_img" src="static/images/red_square.png" width="200" height="200"><br>
                 <img id="stock_img" src="static/images/santa sale.png" width="100" height="100">
                 <p><del>300$</del><em>120$</em></p>
                 <button class="btnbuy greenbtn">Купить</button>
+            </div>
+        </div>
+        <div id="pop-sent" class="pop_div">
+            <div class="pop_content" id="sent-text">
+                <span id="closePop2" class="buttonClose">&times;</span>
+                <h2>Сообщение отправлено</h2>
             </div>
         </div>
         <div id="buy" class="smooth_border flex">
@@ -74,12 +80,15 @@
                 <img id="map" src="static/images/map.png" width="300" height="300">
             </aside>
         </div>
-        <div class="feedback smooth_border">
+        <form class="feedback smooth_border">
             <h2 class="h2white">Обратная_связь</h2>
-            <textarea class="smooth_border" id="input-area" placeholder="Введите_сообщение..." name="input" rows="5"></textarea>
-            <button class="smooth_border" id="send-button" onclick="onSend()">Отправить</button>
+            <label for="name" style="color: white; font-size: 20px">Ваше имя</label>
+            <input type="text" name="name" class="smooth_border" id="name" placeholder="Введите_имя..." required>
+            <label for="input-area" style="color: white; font-size: 20px">Ваше сообщение</label>
+            <input type="text" name="input-area" class="smooth_border" id="input-area" placeholder="Введите_сообщение..." required>
+            <input type="submit" value="Send" class="smooth_border_small" id="send-button">
             <span id="sent">Отправлено!</span>
-        </div>
+        </form>
     </main>
     <script src="static/js/feedback.js"></script>
 </body>
